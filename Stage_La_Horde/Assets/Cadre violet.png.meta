@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f9b5d5ff37cd98e48b57ac7f2eb75352
+guid: ada31e9df53c92f43a8890c9e4489ac4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3631725227285343676
-    second: "Capture d'\xE9cran 2026-06-16 135931_0"
+      213: -7848097338224350463
+    second: Cadre violet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Capture d'\xE9cran 2026-06-16 135931_0"
+      name: Cadre violet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 580
-        height: 670
+        width: 2000
+        height: 1414
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbdea2e3ada766230800000000000000
-      internalID: 3631725227285343676
+      spriteID: 10be2784d05f51390800000000000000
+      internalID: -7848097338224350463
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Capture d'\xE9cran 2026-06-16 135931_0": 3631725227285343676
+      Cadre violet_0: -7848097338224350463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
