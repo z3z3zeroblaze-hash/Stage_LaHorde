@@ -21,4 +21,10 @@ public class MenuManager : MonoBehaviour
         Debug.Log("Fermeture du jeu...");
         Application.Quit();
     }
+
+    // Bouton RETOUR
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu"); // scène menu principal
+    }
 }
