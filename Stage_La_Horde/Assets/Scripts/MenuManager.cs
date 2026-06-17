@@ -27,4 +27,10 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu"); // scène menu principal
     }
+
+    // Bouton Parametres
+    public void OpenSettings()
+    {
+        SceneManager.LoadScene("Settings"); // scène paramètres
+    }
 }
