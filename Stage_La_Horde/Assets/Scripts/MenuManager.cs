@@ -31,6 +31,6 @@ public class MenuManager : MonoBehaviour
     // Bouton Parametres
     public void OpenSettings()
     {
-        SceneManager.LoadScene("Settings"); // scène paramètres
+        SceneManager.LoadScene("Settings"); // scène paramètres 
     }
 }
