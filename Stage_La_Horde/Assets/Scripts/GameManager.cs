@@ -9,14 +9,13 @@ public class GameManager : MonoBehaviour
     [System.Serializable]
     public class CarteSauvegardee
     {
-        public GameObject cartePrefab;
+        public string nomPrefab;
         public Vector3 position;
     }
 
 
     public List<CarteSauvegardee> cartesPlateau = new List<CarteSauvegardee>();
-
-    public int cartesJoueurPosees = 0;
+    public GameObject[] tousLesPrefabs;
 
 
     void Awake()
@@ -25,6 +24,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
+            cartesPlateau.Clear();
         }
         else
         {
@@ -36,27 +37,38 @@ public class GameManager : MonoBehaviour
 
     public void SauvegarderCarte(GameObject carte)
     {
-        CarteSauvegardee nouvelleCarte = new CarteSauvegardee();
+        if (carte == null)
+            return;
 
-        nouvelleCarte.cartePrefab = carte;
-        nouvelleCarte.position = carte.transform.position;
+        CarteSauvegardee data = new CarteSauvegardee();
 
+        data.nomPrefab = carte.name.Replace("(Clone)", "");
+        data.position = carte.transform.position;
 
-        cartesPlateau.Add(nouvelleCarte);
+        cartesPlateau.Add(data);
 
-
-        Debug.Log("Carte sauvegardée !");
+        Debug.Log("Sauvegarde : " + data.nomPrefab);
     }
 
 
-    public bool PeutPoserCarte()
-    {
-        return cartesJoueurPosees < 2;
-    }
 
-
-    public void CarteJoueurPosee()
+    public void ChargerCartes()
     {
-        cartesJoueurPosees++;
+        foreach (CarteSauvegardee data in cartesPlateau)
+        {
+            foreach (GameObject prefab in tousLesPrefabs)
+            {
+                if (prefab.name == data.nomPrefab)
+                {
+                    Instantiate(
+                        prefab,
+                        data.position,
+                        Quaternion.identity
+                    );
+
+                    break;
+                }
+            }
+        }
     }
 }
