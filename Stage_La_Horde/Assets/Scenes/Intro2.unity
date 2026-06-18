@@ -433,6 +433,7 @@ RectTransform:
   - {fileID: 984020760}
   - {fileID: 1936919677}
   - {fileID: 859720504}
+  - {fileID: 1575046330}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -476,8 +477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -350, y: 125}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -254, y: 211}
+  m_SizeDelta: {x: 295, y: 163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859720505
 MonoBehaviour:
@@ -523,6 +524,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1575046331}
+        m_TargetAssemblyTypeName: IntroManager, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1212112918}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadIntro3
@@ -692,6 +705,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49475d08a363cb249a0ac2aebe8fb73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
+--- !u!1 &1575046329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575046330}
+  - component: {fileID: 1575046331}
+  m_Layer: 0
+  m_Name: IntroManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1575046330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575046329}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -162.38806, y: -209.02011, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 502632425}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1575046331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575046329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b5eaa8fa4a60c408396de42b75c585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IntroManager
+  steps:
+  - text: "Arriv\xE9 \xE0 l\u2019int\xE9rieur, je me fige, une dame est assise derri\xE8re
+      une table, elle regarde une boule en verre, je ne crois pas qu\u2019elle m\u2019ais
+      vu."
+    image: {fileID: 7667447922847880062, guid: 41005ad0fdbdca649a786e8550a4af81, type: 3}
+    nextSceneName: 
+    loadNextScene: 1
+  - text: "Je reste plant\xE9 l\xE0, je la regarde. C\u2019est une belle femme, elle
+      est voil\xE9e mais je distingue quand m\xEAme ses traits, elle est jeune\u2026 "
+    image: {fileID: 1559131191980870970, guid: 831c9e7051c8bf541bd528c9d34f6e58, type: 3}
+    nextSceneName: 
+    loadNextScene: 1
+  dialogueText: {fileID: 1936919678}
+  backgroundImage: {fileID: 0}
 --- !u!1 &1832857748
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,11 +932,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 502632425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -205, y: 48}
+  m_SizeDelta: {x: -510, y: 326}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1936919678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,7 +957,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Intro 2
+  m_text: "Arriv\xE9 \xE0 l\u2019int\xE9rieur, je me fige, une dame est assise derri\xE8re
+    une table, elle regarde une boule en verre, je ne crois pas qu\u2019elle m\u2019ait
+    vu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -913,15 +986,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1

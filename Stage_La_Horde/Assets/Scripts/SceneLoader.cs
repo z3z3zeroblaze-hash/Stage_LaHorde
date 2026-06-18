@@ -22,8 +22,8 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Intro5");
     }
 
-    public void LoadGame1()
+    public void LoadIntro6()
     {
-        SceneManager.LoadScene("Game1");
+        SceneManager.LoadScene("Intro6");
     }
 }

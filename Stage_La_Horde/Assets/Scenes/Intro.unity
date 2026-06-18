@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -212, y: 226}
-  m_SizeDelta: {x: 268.4287, y: 148.8362}
+  m_AnchoredPosition: {x: -243, y: 230}
+  m_SizeDelta: {x: 295.1951, y: 163.6774}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &308914204
 MonoBehaviour:
@@ -303,11 +303,11 @@ MonoBehaviour:
     image: {fileID: -5801617255410813121, guid: 75fadd6214d4d584e8556e37199ba587, type: 3}
     nextSceneName: 
     loadNextScene: 1
-  - text: "Apr\xE8s quelques minutes de marchons nous tombons sur une tente violette. "
+  - text: "Apr\xE8s quelques minutes de marche, nous tombons sur une tente violette. "
     image: {fileID: 8380151215771112661, guid: 4f020829ed37345438fd6496fa026bef, type: 3}
     nextSceneName: 
     loadNextScene: 1
-  - text: "e propose un pari, celui qui entre dans la tente gagne 100\u20AC.  Vu
+  - text: "Je propose un pari, celui qui entre dans la tente gagne 100\u20AC.  Vu
       que je sais que Drac n\u2019a pas de couilles, je cours vers la tente en me
       disant : \xAB A moi l\u2019oseille ! \xBB"
     image: {fileID: -5937593012394197058, guid: bbb0bf9732eb98140be9e33deed0f6c8, type: 3}
@@ -449,10 +449,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Apr\xE8s une longue soir\xE9e \xE0 la f\xEAte foraine, nous commen\xE7ons
     \xE0 fatiguer, nous cherchons un coin tranquille o\xF9 nous pourrons finir nos
-    gaufres \xE0 l\u2019abris du bruit.  Apr\xE8s quelques minutes de marchons nous
-    tombons sur une tente violette. Je propose un pari, celui qui entre dans la tente
-    gagne 100\u20AC.  Vu que je sais que Drac n\u2019a pas de couilles, je cours
-    vers la tente en me disant : \xAB A moi l\u2019oseille ! \xBB\r\n"
+    gaufres \xE0 l\u2019abri du bruit.  "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -479,8 +476,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
