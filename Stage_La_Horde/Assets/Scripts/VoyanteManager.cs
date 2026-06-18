@@ -59,6 +59,7 @@ public class VoyanteManager : MonoBehaviour
 
         // place la carte sur la case
         caseLibre.PlaceCard(nouvelleCarte);
+        GameManager.instance.SauvegarderCarte(nouvelleCarte);
 
 
 

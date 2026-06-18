@@ -146,8 +146,8 @@ Transform:
   m_GameObject: {fileID: 5659049}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -764, y: 420, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: -764, y: 359, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -224,7 +224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &9543328
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,8 +251,8 @@ Transform:
   m_GameObject: {fileID: 9543328}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1173, y: -437, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 1173, y: -558, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -330,7 +329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &20695088
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,8 +356,8 @@ Transform:
   m_GameObject: {fileID: 20695088}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1159, y: 420, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 1159, y: 353, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -436,7 +434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &251234600
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,8 +552,8 @@ Transform:
   m_GameObject: {fileID: 292327734}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -254, y: 12, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: -254, y: -82, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -633,7 +630,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &319810815
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,8 +688,8 @@ Transform:
   m_GameObject: {fileID: 385457221}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2191, y: 12, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 2191, y: -116, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -770,7 +766,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &390490467
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,8 +943,8 @@ Transform:
   m_GameObject: {fileID: 589512114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -764, y: 12, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: -764, y: -69, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1026,7 +1021,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &652379130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,8 +1048,8 @@ Transform:
   m_GameObject: {fileID: 652379130}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1159, y: 12, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 1159, y: -89, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1132,7 +1126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &711988238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,8 +1153,8 @@ Transform:
   m_GameObject: {fileID: 711988238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1696, y: 12, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 1696, y: -123, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1238,7 +1231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &843410551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1259,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 187, y: 810, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1344,7 +1336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &894954989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,8 +1587,8 @@ Transform:
   m_GameObject: {fileID: 922157509}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1697, y: -437, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 1697, y: -572, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1674,7 +1665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &995076872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,8 +1692,8 @@ Transform:
   m_GameObject: {fileID: 995076872}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 697, y: 420, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 690, y: 359, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1780,7 +1770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &999694894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,8 +1797,8 @@ Transform:
   m_GameObject: {fileID: 999694894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187, y: 12, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 187, y: -82, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1886,7 +1875,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1066177961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,7 +1903,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1696, y: 810, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -1992,7 +1980,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1097785859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,7 +2008,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -764, y: 810, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -2098,7 +2085,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1101739704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,8 +2203,8 @@ Transform:
   m_GameObject: {fileID: 1154089031}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2200, y: -437, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 2200, y: -585, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -2295,7 +2281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1156412739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,7 +2400,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2191, y: 810, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -2492,7 +2477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1226042784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,7 +2505,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 683, y: 810, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -2598,7 +2582,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1299923081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,8 +2641,8 @@ Transform:
   m_GameObject: {fileID: 1330650814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 693, y: -437, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 693, y: -558, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -2736,7 +2719,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
+--- !u!1 &1338582876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338582877}
+  - component: {fileID: 1338582878}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1338582877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338582876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 662.6028, y: -61.58555, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338582878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338582876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14178358bd09c42468d3d333148d75ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  cartesPlateau: []
+  cartesJoueurPosees: 0
 --- !u!1 &1442524326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,8 +2792,8 @@ Transform:
   m_GameObject: {fileID: 1442524326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -255, y: -437, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: -255, y: -531, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -2842,7 +2870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1502858279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,8 +2897,8 @@ Transform:
   m_GameObject: {fileID: 1502858279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -764, y: -437, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: -764, y: -545, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -2948,7 +2975,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1527572267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,8 +3002,8 @@ Transform:
   m_GameObject: {fileID: 1527572267}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187, y: -437, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 187, y: -545, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3054,7 +3080,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1609785391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,8 +3107,8 @@ Transform:
   m_GameObject: {fileID: 1609785391}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -268, y: 420, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: -255, y: 353, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3160,7 +3185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1633128949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,8 +3212,8 @@ Transform:
   m_GameObject: {fileID: 1633128949}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 697, y: 12, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 697, y: -96, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3266,7 +3290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1765770827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,8 +3317,8 @@ Transform:
   m_GameObject: {fileID: 1765770827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -275, y: 810, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: -262, y: 810, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3372,7 +3395,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1935753827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3400,8 +3422,8 @@ Transform:
   m_GameObject: {fileID: 1935753827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187, y: 420, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 187, y: 366, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3478,7 +3500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &1957364402
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,8 +3527,8 @@ Transform:
   m_GameObject: {fileID: 1957364402}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1682, y: 420, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 1702, y: 326, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3584,7 +3605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &2075818095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,7 +3633,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1152, y: 810, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3690,7 +3710,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1 &2124859418
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,8 +3737,8 @@ Transform:
   m_GameObject: {fileID: 2124859418}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2185, y: 420, z: 0}
-  m_LocalScale: {x: 200, y: 300, z: 100}
+  m_LocalPosition: {x: 2185, y: 332, z: 0}
+  m_LocalScale: {x: 300, y: 400, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 528092819}
@@ -3796,7 +3815,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  placedCard: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3809,3 +3827,4 @@ SceneRoots:
   - {fileID: 528092819}
   - {fileID: 1299923082}
   - {fileID: 894954991}
+  - {fileID: 1338582877}
