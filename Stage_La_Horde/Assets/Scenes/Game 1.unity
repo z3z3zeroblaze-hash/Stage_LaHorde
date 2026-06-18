@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5659050}
   - component: {fileID: 5659051}
+  - component: {fileID: 5659052}
   m_Layer: 0
   m_Name: Slot_02
   m_TagString: Untagged
@@ -210,6 +211,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &5659052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &9543328
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9543329}
   - component: {fileID: 9543330}
+  - component: {fileID: 9543331}
   m_Layer: 0
   m_Name: Slot_04 (4)
   m_TagString: Untagged
@@ -301,6 +317,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &9543331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9543328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &20695088
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,6 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 20695089}
   - component: {fileID: 20695090}
+  - component: {fileID: 20695091}
   m_Layer: 0
   m_Name: Slot_02 (4)
   m_TagString: Untagged
@@ -392,6 +423,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &20695091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20695088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &251234600
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 292327735}
   - component: {fileID: 292327736}
+  - component: {fileID: 292327737}
   m_Layer: 0
   m_Name: Slot_03 (1)
   m_TagString: Untagged
@@ -574,6 +620,51 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &292327737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292327734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
+--- !u!1 &319810815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319810816}
+  m_Layer: 0
+  m_Name: Deck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319810816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319810815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1299923082}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &385457221
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385457222}
   - component: {fileID: 385457223}
+  - component: {fileID: 385457224}
   m_Layer: 0
   m_Name: Slot_03 (6)
   m_TagString: Untagged
@@ -665,6 +757,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &385457224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385457221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &390490467
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589512115}
   - component: {fileID: 589512116}
+  - component: {fileID: 589512117}
   m_Layer: 0
   m_Name: Slot_03
   m_TagString: Untagged
@@ -906,6 +1013,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &589512117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589512114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &652379130
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +1037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 652379131}
   - component: {fileID: 652379132}
+  - component: {fileID: 652379133}
   m_Layer: 0
   m_Name: Slot_03 (4)
   m_TagString: Untagged
@@ -997,6 +1119,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &652379133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652379130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &711988238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,6 +1143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711988239}
   - component: {fileID: 711988240}
+  - component: {fileID: 711988241}
   m_Layer: 0
   m_Name: Slot_03 (5)
   m_TagString: Untagged
@@ -1088,6 +1225,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &711988241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711988238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &843410551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843410552}
   - component: {fileID: 843410553}
+  - component: {fileID: 843410554}
   m_Layer: 0
   m_Name: Slot_01 (2)
   m_TagString: Untagged
@@ -1179,6 +1331,107 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &843410554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843410551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
+--- !u!1 &894954989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 894954991}
+  - component: {fileID: 894954990}
+  m_Layer: 0
+  m_Name: VoyanteManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &894954990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894954989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348bd86ea0d312d4dbe9692139bada29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VoyanteManager
+  deck:
+  - {fileID: 2206718194098083451, guid: bfeaea9b8dbe4e34383968451bde96ef, type: 3}
+  - {fileID: 7755977955735857054, guid: e1a52ea1d7123684f87e31ea326bc6ce, type: 3}
+  - {fileID: 8849540428572633428, guid: a132fe8c521d5cc4a9e393eb1d0d8863, type: 3}
+  - {fileID: 1352117450082888703, guid: dda2d6ee579565b4cac3a6525c1534d6, type: 3}
+  - {fileID: 8737142439712609418, guid: 26977bdab8e52eb49b3ebd8deb0f8732, type: 3}
+  - {fileID: 5952268601049060424, guid: 67442eb96c6c7454ea8d1dd84e34d272, type: 3}
+  - {fileID: 7873416885999527622, guid: eeb1129b25a5d9a47a1f8b54c2b3f5dc, type: 3}
+  - {fileID: 6192886479454448049, guid: 9baad031f4a7bb94eb94bb0d4d81fe86, type: 3}
+  - {fileID: 4032215397603010103, guid: 183c6c7945926a44d8cd5e4b8be1dd4b, type: 3}
+  - {fileID: 2178122490093610344, guid: 03a5cd42c88eeee408c3b6466a51a5af, type: 3}
+  - {fileID: 4234042309784860276, guid: 1341402cf7d25bc4c893e7d905538966, type: 3}
+  - {fileID: 2423941676701234685, guid: 14b77f701d9b7a34ea27df979ea5cc94, type: 3}
+  slots:
+  - {fileID: 1097785862}
+  - {fileID: 1765770830}
+  - {fileID: 843410554}
+  - {fileID: 1226042787}
+  - {fileID: 2075818098}
+  - {fileID: 1066177964}
+  - {fileID: 1183298883}
+  - {fileID: 5659052}
+  - {fileID: 1609785394}
+  - {fileID: 1935753830}
+  - {fileID: 995076875}
+  - {fileID: 20695091}
+  - {fileID: 1957364405}
+  - {fileID: 2124859421}
+  - {fileID: 589512117}
+  - {fileID: 292327737}
+  - {fileID: 999694897}
+  - {fileID: 1633128952}
+  - {fileID: 652379133}
+  - {fileID: 711988241}
+  - {fileID: 385457224}
+  - {fileID: 1502858282}
+  - {fileID: 1442524329}
+  - {fileID: 1527572270}
+  - {fileID: 1330650817}
+  - {fileID: 9543331}
+  - {fileID: 922157512}
+  - {fileID: 1154089034}
+  cartesParTour: 2
+--- !u!4 &894954991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894954989}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 662.6028, y: -61.58555, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &901124851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,6 +1579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922157510}
   - component: {fileID: 922157511}
+  - component: {fileID: 922157512}
   m_Layer: 0
   m_Name: Slot_04 (5)
   m_TagString: Untagged
@@ -1407,6 +1661,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &922157512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922157509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &995076872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,6 +1685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995076873}
   - component: {fileID: 995076874}
+  - component: {fileID: 995076875}
   m_Layer: 0
   m_Name: Slot_02 (3)
   m_TagString: Untagged
@@ -1498,6 +1767,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &995076875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995076872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &999694894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,6 +1791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 999694895}
   - component: {fileID: 999694896}
+  - component: {fileID: 999694897}
   m_Layer: 0
   m_Name: Slot_03 (2)
   m_TagString: Untagged
@@ -1589,6 +1873,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &999694897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999694894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1066177961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,6 +1897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066177962}
   - component: {fileID: 1066177963}
+  - component: {fileID: 1066177964}
   m_Layer: 0
   m_Name: Slot_01 (5)
   m_TagString: Untagged
@@ -1680,6 +1979,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1066177964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066177961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1097785859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,6 +2003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097785860}
   - component: {fileID: 1097785861}
+  - component: {fileID: 1097785862}
   m_Layer: 0
   m_Name: Slot_01
   m_TagString: Untagged
@@ -1771,6 +2085,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1097785862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097785859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1101739704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,6 +2200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154089032}
   - component: {fileID: 1154089033}
+  - component: {fileID: 1154089034}
   m_Layer: 0
   m_Name: Slot_04 (6)
   m_TagString: Untagged
@@ -1953,6 +2282,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1154089034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154089031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1156412739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1183298881}
   - component: {fileID: 1183298882}
+  - component: {fileID: 1183298883}
   m_Layer: 0
   m_Name: Slot_01 (6)
   m_TagString: Untagged
@@ -2135,6 +2479,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1183298883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183298880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1226042784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226042785}
   - component: {fileID: 1226042786}
+  - component: {fileID: 1226042787}
   m_Layer: 0
   m_Name: Slot_01 (3)
   m_TagString: Untagged
@@ -2226,6 +2585,52 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1226042787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226042784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
+--- !u!1 &1299923081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299923082}
+  m_Layer: 0
+  m_Name: Voyante
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299923082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299923081}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 662.6028, y: -61.58555, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 319810816}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1330650814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1330650815}
   - component: {fileID: 1330650816}
+  - component: {fileID: 1330650817}
   m_Layer: 0
   m_Name: Slot_04 (3)
   m_TagString: Untagged
@@ -2317,6 +2723,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1330650817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330650814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1442524326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,6 +2747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442524327}
   - component: {fileID: 1442524328}
+  - component: {fileID: 1442524329}
   m_Layer: 0
   m_Name: Slot_04 (1)
   m_TagString: Untagged
@@ -2408,6 +2829,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1442524329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442524326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1502858279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2418,6 +2853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1502858280}
   - component: {fileID: 1502858281}
+  - component: {fileID: 1502858282}
   m_Layer: 0
   m_Name: Slot_04
   m_TagString: Untagged
@@ -2499,6 +2935,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1502858282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502858279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1527572267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,6 +2959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1527572268}
   - component: {fileID: 1527572269}
+  - component: {fileID: 1527572270}
   m_Layer: 0
   m_Name: Slot_04 (2)
   m_TagString: Untagged
@@ -2590,6 +3041,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1527572270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527572267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1609785391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,6 +3065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1609785392}
   - component: {fileID: 1609785393}
+  - component: {fileID: 1609785394}
   m_Layer: 0
   m_Name: Slot_02 (1)
   m_TagString: Untagged
@@ -2681,6 +3147,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1609785394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609785391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1633128949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,6 +3171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1633128950}
   - component: {fileID: 1633128951}
+  - component: {fileID: 1633128952}
   m_Layer: 0
   m_Name: Slot_03 (3)
   m_TagString: Untagged
@@ -2772,6 +3253,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1633128952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633128949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1765770827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +3277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1765770828}
   - component: {fileID: 1765770829}
+  - component: {fileID: 1765770830}
   m_Layer: 0
   m_Name: Slot_01 (1)
   m_TagString: Untagged
@@ -2863,6 +3359,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1765770830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765770827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1935753827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,6 +3383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1935753828}
   - component: {fileID: 1935753829}
+  - component: {fileID: 1935753830}
   m_Layer: 0
   m_Name: Slot_02 (2)
   m_TagString: Untagged
@@ -2954,6 +3465,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1935753830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935753827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &1957364402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,6 +3489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1957364403}
   - component: {fileID: 1957364404}
+  - component: {fileID: 1957364405}
   m_Layer: 0
   m_Name: Slot_02 (5)
   m_TagString: Untagged
@@ -3045,6 +3571,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1957364405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957364402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &2075818095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +3595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075818096}
   - component: {fileID: 2075818097}
+  - component: {fileID: 2075818098}
   m_Layer: 0
   m_Name: Slot_01 (4)
   m_TagString: Untagged
@@ -3136,6 +3677,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2075818098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075818095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1 &2124859418
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,6 +3701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124859419}
   - component: {fileID: 2124859420}
+  - component: {fileID: 2124859421}
   m_Layer: 0
   m_Name: Slot_02 (6)
   m_TagString: Untagged
@@ -3227,6 +3783,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2124859421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124859418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f143034aab6fb14a84c803281bd1f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CardSlot
+  occupied: 0
+  placedCard: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3237,3 +3807,5 @@ SceneRoots:
   - {fileID: 251234602}
   - {fileID: 390490469}
   - {fileID: 528092819}
+  - {fileID: 1299923082}
+  - {fileID: 894954991}

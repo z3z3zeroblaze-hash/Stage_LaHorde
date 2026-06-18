@@ -48,6 +48,9 @@ TagManager:
   - name: emplacement des cartes
     uniqueID: 2794463199
     locked: 0
+  - name: Jeux de cartes voyantes
+    uniqueID: 3075299209
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
