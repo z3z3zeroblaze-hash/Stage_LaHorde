@@ -776,6 +776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390490469}
   - component: {fileID: 390490468}
+  - component: {fileID: 390490470}
   m_Layer: 0
   m_Name: 'Pioche Joueur '
   m_TagString: 'table de jeu '
@@ -857,6 +858,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &390490470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390490467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b7c55b470aa444d84d7346ce314224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHand
+  deck: []
+  mainJoueur: {fileID: 0}
+  tailleMain: 5
 --- !u!1 &528092818
 GameObject:
   m_ObjectHideFlags: 0
