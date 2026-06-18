@@ -10,16 +10,34 @@ public class TrapCard : MonoBehaviour
 
     public TypeCarte type;
 
+    public bool cachee = false;
 
-    public bool cachee = true;
+
+    void Start()
+    {
+        // TEST : la carte reste visible
+        MontrerCarte();
+    }
 
 
     public void Cacher()
     {
-        cachee = true;
+        // TEST : on ne cache pas
+        cachee = false;
+        MontrerCarte();
+    }
 
-        // cache juste le sprite
-        GetComponent<SpriteRenderer>().enabled = false;
+
+    public void MontrerCarte()
+    {
+        cachee = false;
+
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+
+        if (sprite != null)
+        {
+            sprite.enabled = true;
+        }
     }
 
 
@@ -27,7 +45,7 @@ public class TrapCard : MonoBehaviour
     {
         cachee = false;
 
-        GetComponent<SpriteRenderer>().enabled = true;
+        MontrerCarte();
 
         ActiverEffet();
     }

@@ -13,7 +13,9 @@ public class VoyanteManager : MonoBehaviour
 
     void Start()
     {
+        // copie du deck pour éviter de retirer les vraies cartes
         cartesDisponibles = new List<GameObject>(deck);
+
         TourVoyante();
     }
 
@@ -22,50 +24,82 @@ public class VoyanteManager : MonoBehaviour
     {
         if (cartesParTour <= 0)
         {
-            Debug.Log("Tour fini");
+            Debug.Log("Tour de la voyante terminé");
             return;
         }
 
 
         CardSlot caseLibre = TrouverCaseLibre();
 
+
         if (caseLibre == null)
+        {
+            Debug.Log("Plus de cases disponibles");
             return;
+        }
 
 
-        int index = Random.Range(0, cartesDisponibles.Count);
+        // choisir une carte au hasard
+        int indexCarte = Random.Range(0, cartesDisponibles.Count);
 
-        GameObject carte = Instantiate(
-            cartesDisponibles[index],
+        GameObject carteChoisie = cartesDisponibles[indexCarte];
+
+
+        // empêche de reprendre la même carte
+        cartesDisponibles.RemoveAt(indexCarte);
+
+
+
+        GameObject nouvelleCarte = Instantiate(
+            carteChoisie,
             caseLibre.transform.position,
             Quaternion.identity
         );
 
 
-        cartesDisponibles.RemoveAt(index);
+        // place la carte sur la case
+        caseLibre.PlaceCard(nouvelleCarte);
 
 
-        caseLibre.PlaceCard(carte);
 
+        // pour l'instant elle reste visible
+        nouvelleCarte.GetComponent<TrapCard>().Cacher();
 
-        carte.GetComponent<TrapCard>().Cacher();
 
 
         cartesParTour--;
 
+
+        // pose la deuxième après 1 seconde
         Invoke("TourVoyante", 1f);
     }
 
 
 
+
     CardSlot TrouverCaseLibre()
     {
+        List<CardSlot> casesLibres = new List<CardSlot>();
+
+
         foreach (CardSlot slot in slots)
         {
             if (!slot.occupied)
-                return slot;
+            {
+                casesLibres.Add(slot);
+            }
         }
 
-        return null;
+
+        if (casesLibres.Count == 0)
+        {
+            return null;
+        }
+
+
+        int choix = Random.Range(0, casesLibres.Count);
+
+
+        return casesLibres[choix];
     }
 }
