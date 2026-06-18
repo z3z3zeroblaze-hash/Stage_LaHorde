@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -350, y: 125}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -212, y: 226}
+  m_SizeDelta: {x: 268.4287, y: 148.8362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &308914204
 MonoBehaviour:
@@ -202,9 +202,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1139230908}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadIntro2
+      - m_Target: {fileID: 401055819}
+        m_TargetAssemblyTypeName: IntroManager, Assembly-CSharp
+        m_MethodName: Next
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1227765466256806567, guid: a3686b023172db9448ee0198b2a9a205, type: 3}
+  m_Sprite: {fileID: 7667447922847880062, guid: 41005ad0fdbdca649a786e8550a4af81, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -252,6 +252,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308914202}
   m_CullTransparentMesh: 1
+--- !u!1 &401055817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401055818}
+  - component: {fileID: 401055819}
+  m_Layer: 0
+  m_Name: IntroManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401055818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401055817}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.881958, y: -56.86493, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1769300803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &401055819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401055817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b5eaa8fa4a60c408396de42b75c585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  steps:
+  - text: "Apr\xE8s une longue soir\xE9e \xE0 la f\xEAte foraine, nous commen\xE7ons
+      \xE0 fatiguer, nous cherchons un coin tranquille o\xF9 nous pourrons finir
+      nos gaufres \xE0 l\u2019abris du bruit.  "
+    image: {fileID: -5801617255410813121, guid: 75fadd6214d4d584e8556e37199ba587, type: 3}
+    nextSceneName: 
+    loadNextScene: 1
+  - text: "Apr\xE8s quelques minutes de marchons nous tombons sur une tente violette. "
+    image: {fileID: 8380151215771112661, guid: 4f020829ed37345438fd6496fa026bef, type: 3}
+    nextSceneName: 
+    loadNextScene: 1
+  - text: "e propose un pari, celui qui entre dans la tente gagne 100\u20AC.  Vu
+      que je sais que Drac n\u2019a pas de couilles, je cours vers la tente en me
+      disant : \xAB A moi l\u2019oseille ! \xBB"
+    image: {fileID: -5937593012394197058, guid: bbb0bf9732eb98140be9e33deed0f6c8, type: 3}
+    nextSceneName: 
+    loadNextScene: 1
+  dialogueText: {fileID: 578580102}
+  backgroundImage: {fileID: 0}
 --- !u!1 &433682630
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,11 +422,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1769300803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -640}
-  m_SizeDelta: {x: 1500, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -205.36218, y: 47.913}
+  m_SizeDelta: {x: -510.7234, y: 326.1743}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &578580102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +447,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nous nous amusons tellement, cette journ\xE9e est magique !"
+  m_text: "Apr\xE8s une longue soir\xE9e \xE0 la f\xEAte foraine, nous commen\xE7ons
+    \xE0 fatiguer, nous cherchons un coin tranquille o\xF9 nous pourrons finir nos
+    gaufres \xE0 l\u2019abris du bruit.  Apr\xE8s quelques minutes de marchons nous
+    tombons sur une tente violette. Je propose un pari, celui qui entre dans la tente
+    gagne 100\u20AC.  Vu que je sais que Drac n\u2019a pas de couilles, je cours
+    vers la tente en me disant : \xAB A moi l\u2019oseille ! \xBB\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -418,8 +486,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -498,7 +566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -100}
+  m_AnchoredPosition: {x: 574, y: -97}
   m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898129955
@@ -1097,6 +1165,7 @@ RectTransform:
   - {fileID: 578580101}
   - {fileID: 898129954}
   - {fileID: 308914203}
+  - {fileID: 401055818}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
