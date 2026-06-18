@@ -45,6 +45,9 @@ TagManager:
   - name: 'Table de jeu '
     uniqueID: 1033407659
     locked: 0
+  - name: emplacement des cartes
+    uniqueID: 2794463199
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
