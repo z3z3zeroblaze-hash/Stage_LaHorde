@@ -630,37 +630,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
---- !u!1 &319810815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 319810816}
-  m_Layer: 0
-  m_Name: Deck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &319810816
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319810815}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1299923082}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &385457221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,93 +1305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
---- !u!1 &894954989
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 894954991}
-  - component: {fileID: 894954990}
-  m_Layer: 0
-  m_Name: VoyanteManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &894954990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894954989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348bd86ea0d312d4dbe9692139bada29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VoyanteManager
-  deck:
-  - {fileID: 2206718194098083451, guid: bfeaea9b8dbe4e34383968451bde96ef, type: 3}
-  - {fileID: 7755977955735857054, guid: e1a52ea1d7123684f87e31ea326bc6ce, type: 3}
-  - {fileID: 8849540428572633428, guid: a132fe8c521d5cc4a9e393eb1d0d8863, type: 3}
-  - {fileID: 1352117450082888703, guid: dda2d6ee579565b4cac3a6525c1534d6, type: 3}
-  - {fileID: 8737142439712609418, guid: 26977bdab8e52eb49b3ebd8deb0f8732, type: 3}
-  - {fileID: 5952268601049060424, guid: 67442eb96c6c7454ea8d1dd84e34d272, type: 3}
-  - {fileID: 7873416885999527622, guid: eeb1129b25a5d9a47a1f8b54c2b3f5dc, type: 3}
-  - {fileID: 6192886479454448049, guid: 9baad031f4a7bb94eb94bb0d4d81fe86, type: 3}
-  - {fileID: 4032215397603010103, guid: 183c6c7945926a44d8cd5e4b8be1dd4b, type: 3}
-  - {fileID: 2178122490093610344, guid: 03a5cd42c88eeee408c3b6466a51a5af, type: 3}
-  - {fileID: 4234042309784860276, guid: 1341402cf7d25bc4c893e7d905538966, type: 3}
-  - {fileID: 2423941676701234685, guid: 14b77f701d9b7a34ea27df979ea5cc94, type: 3}
-  slots:
-  - {fileID: 1097785862}
-  - {fileID: 1765770830}
-  - {fileID: 843410554}
-  - {fileID: 1226042787}
-  - {fileID: 2075818098}
-  - {fileID: 1066177964}
-  - {fileID: 1183298883}
-  - {fileID: 5659052}
-  - {fileID: 1609785394}
-  - {fileID: 1935753830}
-  - {fileID: 995076875}
-  - {fileID: 20695091}
-  - {fileID: 1957364405}
-  - {fileID: 2124859421}
-  - {fileID: 589512117}
-  - {fileID: 292327737}
-  - {fileID: 999694897}
-  - {fileID: 1633128952}
-  - {fileID: 652379133}
-  - {fileID: 711988241}
-  - {fileID: 385457224}
-  - {fileID: 1502858282}
-  - {fileID: 1442524329}
-  - {fileID: 1527572270}
-  - {fileID: 1330650817}
-  - {fileID: 9543331}
-  - {fileID: 922157512}
-  - {fileID: 1154089034}
-  cartesParTour: 2
---- !u!4 &894954991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894954989}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 662.6028, y: -61.58555, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &901124851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,38 +2464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
---- !u!1 &1299923081
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1299923082}
-  m_Layer: 0
-  m_Name: Voyante
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1299923082
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299923081}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 662.6028, y: -61.58555, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 319810816}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1330650814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,7 +2614,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   cartesPlateau: []
-  cartesJoueurPosees: 0
 --- !u!1 &1442524326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,6 +2824,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
+--- !u!1 &1509031363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1509031365}
+  - component: {fileID: 1509031364}
+  m_Layer: 0
+  m_Name: CarteLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1509031364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509031363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9381aec3018c0084d90c842f383677a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarteLoader
+--- !u!4 &1509031365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509031363}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2256.5554, y: 407.30753, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1527572267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,6 +3718,5 @@ SceneRoots:
   - {fileID: 251234602}
   - {fileID: 390490469}
   - {fileID: 528092819}
-  - {fileID: 1299923082}
-  - {fileID: 894954991}
   - {fileID: 1338582877}
+  - {fileID: 1509031365}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class VoyanteManager : MonoBehaviour
 {
@@ -20,11 +21,20 @@ public class VoyanteManager : MonoBehaviour
     }
 
 
+    void AllerAuJoueur()
+    {
+        SceneManager.LoadScene("Game2");
+    }
+
+
     void TourVoyante()
     {
         if (cartesParTour <= 0)
         {
             Debug.Log("Tour de la voyante terminé");
+
+            Invoke("AllerAuJoueur", 1f);
+
             return;
         }
 
