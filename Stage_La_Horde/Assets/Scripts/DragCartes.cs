@@ -4,10 +4,11 @@ using UnityEngine.EventSystems;
 public class DragCarte : MonoBehaviour,
 IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    private Vector3 positionDepart;
-    private Transform parentDepart;
 
-    public bool posee = false;
+    Vector3 positionDepart;
+    Transform parentDepart;
+
+    bool posee = false;
 
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -15,11 +16,16 @@ IBeginDragHandler, IDragHandler, IEndDragHandler
         if (posee)
             return;
 
+
         positionDepart = transform.position;
         parentDepart = transform.parent;
 
-        transform.SetParent(transform.root);
+
+        transform.SetParent(
+            GameObject.Find("Canvas").transform
+        );
     }
+
 
 
     public void OnDrag(PointerEventData eventData)
@@ -27,28 +33,60 @@ IBeginDragHandler, IDragHandler, IEndDragHandler
         if (posee)
             return;
 
+
         transform.position = Input.mousePosition;
     }
 
 
+
     public void OnEndDrag(PointerEventData eventData)
     {
+
         if (posee)
             return;
 
 
-        GameObject objet = eventData.pointerCurrentRaycast.gameObject;
+        GameObject objet =
+        eventData.pointerCurrentRaycast.gameObject;
+
 
 
         if (objet != null)
         {
-            CardSlot slot = objet.GetComponent<CardSlot>();
 
-            if (slot != null && !slot.occupied)
+            CardSlot slot =
+            objet.GetComponent<CardSlot>();
+
+
+            if (slot != null && !slot.occupe)
             {
-                PoserCarte(slot);
-                return;
+
+                if (GameManager.instance.PeutPoserCarte())
+                {
+
+                    transform.position =
+                    slot.transform.position;
+
+
+                    transform.SetParent(slot.transform);
+
+
+                    slot.occupe = true;
+
+
+                    posee = true;
+
+
+                    GameManager.instance.CarteJoueurPosee();
+
+
+                    Debug.Log("Carte placée !");
+
+                    return;
+                }
+
             }
+
         }
 
 
@@ -57,35 +95,11 @@ IBeginDragHandler, IDragHandler, IEndDragHandler
 
 
 
-    void PoserCarte(CardSlot slot)
-    {
-        if (!GameManager.instance.PeutPoserCarte())
-        {
-            RetourMain();
-            return;
-        }
-
-
-        transform.position = slot.transform.position;
-
-        transform.SetParent(slot.transform);
-
-
-        slot.occupied = true;
-
-        posee = true;
-
-
-        GameManager.instance.CarteJoueurPosee();
-
-        Debug.Log("Carte joueur posée");
-    }
-
-
-
     void RetourMain()
     {
         transform.position = positionDepart;
+
         transform.SetParent(parentDepart);
     }
+
 }
