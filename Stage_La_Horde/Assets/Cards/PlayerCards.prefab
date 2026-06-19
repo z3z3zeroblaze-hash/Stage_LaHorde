@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe892bfb7a01824fa479889ab38e14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragCarte
-  posee: 0
 --- !u!114 &3282712570274619805
 MonoBehaviour:
   m_ObjectHideFlags: 0
