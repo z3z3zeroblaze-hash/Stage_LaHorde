@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - 'table de jeu '
+  - Ground
+  - Ladder
+  - Exit
   layers:
   - Default
   - TransparentFX
