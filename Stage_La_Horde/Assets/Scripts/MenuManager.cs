@@ -6,13 +6,13 @@ public class MenuManager : MonoBehaviour
     // Bouton PLAY
     public void PlayGame()
     {
-        SceneManager.LoadScene("Intro"); // mets le nom de ta scène de jeu ici
+        SceneManager.LoadScene("Intro"); // mets le nom de ta scï¿½ne de jeu ici
     }
 
     // Bouton CREDITS
     public void Credits()
     {
-        SceneManager.LoadScene("Credits"); // scène crédits
+        SceneManager.LoadScene("Credits"); // scï¿½ne crï¿½dits
     }
 
     // Bouton QUITTER
@@ -25,12 +25,16 @@ public class MenuManager : MonoBehaviour
     // Bouton RETOUR
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("MainMenu"); // scène menu principal
+        SceneManager.LoadScene("MainMenu"); // scï¿½ne menu principal
     }
 
     // Bouton Parametres
     public void OpenSettings()
     {
-        SceneManager.LoadScene("Settings"); // scène paramètres 
+        SceneManager.LoadScene("Settings"); // scï¿½ne paramï¿½tres 
+    }
+    public void LoadGame3()
+    {
+        SceneManager.LoadScene("Game3"); // mets le nom de ta scï¿½ne de jeu ici
     }
 }
