@@ -71,4 +71,22 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+
+    public int cartesJoueurPosees = 0;
+
+    public bool PeutPoserCarte()
+    {
+        return cartesJoueurPosees < 2;
+    }
+
+
+    public void CarteJoueurPosee()
+    {
+        cartesJoueurPosees++;
+
+        Debug.Log("Cartes joueur posées : " + cartesJoueurPosees);
+    }
+
+
 }
