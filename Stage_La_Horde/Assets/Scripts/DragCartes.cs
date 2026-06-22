@@ -79,8 +79,9 @@ IBeginDragHandler, IDragHandler, IEndDragHandler
 
                     GameManager.instance.CarteJoueurPosee();
 
+                    GameManager.instance.SauvegarderCarte(gameObject);
 
-                    Debug.Log("Carte placée !");
+                    Debug.Log("Carte placï¿½e !");
 
                     return;
                 }
