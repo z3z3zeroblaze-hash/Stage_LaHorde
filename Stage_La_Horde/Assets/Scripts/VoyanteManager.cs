@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class VoyanteManager : MonoBehaviour
 {
@@ -14,16 +13,8 @@ public class VoyanteManager : MonoBehaviour
 
     void Start()
     {
-        // copie du deck pour éviter de retirer les vraies cartes
         cartesDisponibles = new List<GameObject>(deck);
-
         TourVoyante();
-    }
-
-
-    void AllerAuJoueur()
-    {
-        SceneManager.LoadScene("Game2");
     }
 
 
@@ -32,32 +23,24 @@ public class VoyanteManager : MonoBehaviour
         if (cartesParTour <= 0)
         {
             Debug.Log("Tour de la voyante terminé");
-
-            Invoke("AllerAuJoueur", 1f);
-
             return;
         }
 
 
         CardSlot caseLibre = TrouverCaseLibre();
 
-
         if (caseLibre == null)
         {
-            Debug.Log("Plus de cases disponibles");
+            Debug.Log("Plus de cases !");
             return;
         }
 
 
-        // choisir une carte au hasard
-        int indexCarte = Random.Range(0, cartesDisponibles.Count);
+        int index = Random.Range(0, cartesDisponibles.Count);
 
-        GameObject carteChoisie = cartesDisponibles[indexCarte];
+        GameObject carteChoisie = cartesDisponibles[index];
 
-
-        // empêche de reprendre la même carte
-        cartesDisponibles.RemoveAt(indexCarte);
-
+        cartesDisponibles.RemoveAt(index);
 
 
         GameObject nouvelleCarte = Instantiate(
@@ -67,50 +50,29 @@ public class VoyanteManager : MonoBehaviour
         );
 
 
-        // place la carte sur la case
         caseLibre.PlaceCard(nouvelleCarte);
-        GameManager.instance.SauvegarderCarte(nouvelleCarte);
 
 
-
-        // pour l'instant elle reste visible
         nouvelleCarte.GetComponent<TrapCard>().Cacher();
-
 
 
         cartesParTour--;
 
-
-        // pose la deuxième après 1 seconde
         Invoke("TourVoyante", 1f);
     }
 
 
 
-
     CardSlot TrouverCaseLibre()
     {
-        List<CardSlot> casesLibres = new List<CardSlot>();
-
-
         foreach (CardSlot slot in slots)
         {
             if (!slot.occupied)
             {
-                casesLibres.Add(slot);
+                return slot;
             }
         }
 
-
-        if (casesLibres.Count == 0)
-        {
-            return null;
-        }
-
-
-        int choix = Random.Range(0, casesLibres.Count);
-
-
-        return casesLibres[choix];
+        return null;
     }
 }
