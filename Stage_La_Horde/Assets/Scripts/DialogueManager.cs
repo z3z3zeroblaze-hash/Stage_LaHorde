@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class DialogueManager : MonoBehaviour
+public class IntroManager : MonoBehaviour
 {
     [System.Serializable]
     public class Step
@@ -21,12 +21,10 @@ public class DialogueManager : MonoBehaviour
 
     private int index = 0;
 
-
     void Start()
     {
         ShowStep();
     }
-
 
     public void Next()
     {
@@ -38,36 +36,36 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Game 2");
+            SceneManager.LoadScene("Game2");
         }
     }
 
-
     void ShowStep()
     {
+        // Vérifie qu'il y a des étapes
         if (steps == null || steps.Length == 0)
         {
-            Debug.LogError("Aucune étape configurée !");
+            Debug.LogError("Aucune étape configurée dans IntroManager !");
             return;
         }
 
-
+        // Sécurité pour éviter les erreurs
         if (index >= steps.Length)
         {
             return;
         }
 
-
+        // Vérifie le texte
         if (dialogueText != null)
         {
             dialogueText.text = steps[index].text;
         }
         else
         {
-            Debug.LogError("Dialogue Text non relié !");
+            Debug.LogError("DialogueText n'est pas relié dans l'Inspector !");
         }
 
-
+        // Vérifie l'image
         if (backgroundImage != null && steps[index].image != null)
         {
             backgroundImage.sprite = steps[index].image;
