@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitZone : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class ExitZone : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("VICTOIRE !");
+            SceneManager.LoadScene("Game1");
         }
     }
 }
