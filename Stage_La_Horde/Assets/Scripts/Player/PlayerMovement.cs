@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 8f;
     public float climbSpeed = 4f;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
 
     private Rigidbody2D rb;
     private bool isGrounded;
