@@ -10,10 +10,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isOnLadder;
+    private Transform spawnPoint;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spawnPoint = GameObject.Find("SpawnPoint").transform;
     }
 
     void Update()
@@ -79,5 +81,10 @@ public class PlayerMovement : MonoBehaviour
             isOnLadder = false;
             rb.gravityScale = 1;
         }
+    }
+    public void RetourAuDepart()
+    {
+        transform.position = spawnPoint.position;
+        rb.linearVelocity = Vector2.zero;
     }
 }

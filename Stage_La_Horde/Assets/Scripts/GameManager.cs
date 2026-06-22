@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
     {
         cartesJoueurPosees++;
 
-        Debug.Log("Cartes joueur posées : " + cartesJoueurPosees);
+        Debug.Log("Cartes joueur posees : " + cartesJoueurPosees);
     }
 
 

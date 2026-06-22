@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Ladder
   - Exit
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
