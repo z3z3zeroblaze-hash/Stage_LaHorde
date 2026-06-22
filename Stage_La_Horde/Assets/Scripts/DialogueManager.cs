@@ -42,9 +42,33 @@ public class IntroManager : MonoBehaviour
 
     void ShowStep()
     {
-        dialogueText.text = steps[index].text;
+        // Vérifie qu'il y a des étapes
+        if (steps == null || steps.Length == 0)
+        {
+            Debug.LogError("Aucune étape configurée dans IntroManager !");
+            return;
+        }
 
-        if (steps[index].image != null)
+        // Sécurité pour éviter les erreurs
+        if (index >= steps.Length)
+        {
+            return;
+        }
+
+        // Vérifie le texte
+        if (dialogueText != null)
+        {
+            dialogueText.text = steps[index].text;
+        }
+        else
+        {
+            Debug.LogError("DialogueText n'est pas relié dans l'Inspector !");
+        }
+
+        // Vérifie l'image
+        if (backgroundImage != null && steps[index].image != null)
+        {
             backgroundImage.sprite = steps[index].image;
+        }
     }
 }
