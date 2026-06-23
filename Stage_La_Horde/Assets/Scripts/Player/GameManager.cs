@@ -5,17 +5,16 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-
-    [System.Serializable]
-    public class CarteSauvegardee
+    void Start()
     {
-        public string nomPrefab;
-        public Vector3 position;
+        _tours.bindTourTerminer(OnTourTerminer);
+        _tours.StartTour();
     }
-
-
-    public List<CarteSauvegardee> cartesPlateau = new List<CarteSauvegardee>();
-    public GameObject[] tousLesPrefabs;
+    private void OnTourTerminer()    
+    {
+        Debug.Log("Tour terminé !");
+        //_tours.StartTour();
+    }
 
 
     void Awake()
@@ -23,70 +22,20 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
 
-            cartesPlateau.Clear();
         }
         else
         {
             Destroy(gameObject);
         }
+
+        
     }
 
-
-
-    public void SauvegarderCarte(GameObject carte)
+    private Tour _tours = new Tour(new List<Manche>
     {
-        if (carte == null)
-            return;
-
-        CarteSauvegardee data = new CarteSauvegardee();
-
-        data.nomPrefab = carte.name.Replace("(Clone)", "");
-        data.position = carte.transform.position;
-
-        cartesPlateau.Add(data);
-
-        Debug.Log("Sauvegarde : " + data.nomPrefab);
-    }
-
-
-
-    public void ChargerCartes()
-    {
-        foreach (CarteSauvegardee data in cartesPlateau)
-        {
-            foreach (GameObject prefab in tousLesPrefabs)
-            {
-                if (prefab.name == data.nomPrefab)
-                {
-                    Instantiate(
-                        prefab,
-                        data.position,
-                        Quaternion.identity
-                    );
-
-                    break;
-                }
-            }
-        }
-    }
-
-
-    public int cartesJoueurPosees = 0;
-
-    public bool PeutPoserCarte()
-    {
-        return cartesJoueurPosees < 2;
-    }
-
-
-    public void CarteJoueurPosee()
-    {
-        cartesJoueurPosees++;
-
-        Debug.Log("Cartes joueur posees : " + cartesJoueurPosees);
-    }
-
-
+        new MancheVoyante(),
+        new MancheJoueur(),
+        new ManchePlateformer()
+    });
 }

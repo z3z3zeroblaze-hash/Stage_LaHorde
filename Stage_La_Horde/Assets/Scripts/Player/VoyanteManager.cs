@@ -1,78 +1,73 @@
 using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class VoyanteManager : MonoBehaviour
 {
-    public GameObject[] deck;
+    public GameObject[] cartesVoyante;
     public CardSlot[] slots;
 
-    public int cartesParTour = 2;
-
-    private List<GameObject> cartesDisponibles;
-
+    
+    public static VoyanteManager instance;
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
-        cartesDisponibles = new List<GameObject>(deck);
-        TourVoyante();
+        PoserDeuxCartes();
     }
 
 
-    void TourVoyante()
+    public void PoserDeuxCartes()
     {
-        if (cartesParTour <= 0)
-        {
-            Debug.Log("Tour de la voyante terminé");
-            return;
-        }
+        int posees = 0;
 
 
-        CardSlot caseLibre = TrouverCaseLibre();
-
-        if (caseLibre == null)
-        {
-            Debug.Log("Plus de cases !");
-            return;
-        }
-
-
-        int index = Random.Range(0, cartesDisponibles.Count);
-
-        GameObject carteChoisie = cartesDisponibles[index];
-
-        cartesDisponibles.RemoveAt(index);
-
-
-        GameObject nouvelleCarte = Instantiate(
-            carteChoisie,
-            caseLibre.transform.position,
-            Quaternion.identity
-        );
-
-
-        caseLibre.PlaceCard(nouvelleCarte);
-
-
-        nouvelleCarte.GetComponent<TrapCard>().Cacher();
-
-
-        cartesParTour--;
-
-        Invoke("TourVoyante", 1f);
-    }
-
-
-
-    CardSlot TrouverCaseLibre()
-    {
         foreach (CardSlot slot in slots)
         {
             if (!slot.occupied)
             {
-                return slot;
+                GameObject carte = Instantiate(
+                    cartesVoyante[Random.Range(0, cartesVoyante.Length)],
+                    slot.transform.position,
+                    Quaternion.identity
+                );
+
+
+                carte.transform.SetParent(slot.transform);
+
+
+                slot.occupied = true;
+                slot.carteDansLeSlot = carte;
+
+
+                Debug.Log("Carte voyante posée : " + carte.name);
+
+
+                posees++;
+
+
+                if (posees >= 2)
+                    break;
             }
         }
-
-        return null;
     }
+
+    public class RandomExample : MonoBehaviour
+    {
+        void Start()
+        {
+            int randomInt = Random.Range(0, 28); // Génère un entier entre 0 (inclus) et 27 (exclus)
+            Debug.Log("Nombre entier aléatoire : " + randomInt);
+        }
+    }
+
 }

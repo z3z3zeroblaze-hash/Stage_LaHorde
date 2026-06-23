@@ -4,32 +4,20 @@ public class CardSlot : MonoBehaviour
 {
     public bool occupied = false;
 
-    // Compatibilité avec DragCartes
-    public bool occupe
-    {
-        get { return occupied; }
-        set { occupied = value; }
-    }
+    public GameObject carteDansLeSlot;
 
 
-    public GameObject cartePosee;
-
-
-    public bool PlaceCard(GameObject carte)
+    public void PlaceCard(GameObject carte)
     {
         if (occupied)
-            return false;
+            return;
 
-
-        cartePosee = carte;
-
-        occupied = true;
 
         carte.transform.position = transform.position;
-
         carte.transform.SetParent(transform);
 
 
-        return true;
+        carteDansLeSlot = carte;
+        occupied = true;
     }
 }

@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &9543328
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &20695088
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &251234600
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,38 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
---- !u!1 &319810815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 319810816}
-  m_Layer: 0
-  m_Name: Deck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &319810816
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319810815}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1299923082}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &385457221
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &390490467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &652379130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &711988238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &843410551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,7 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &894954989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,7 +1339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 894954991}
-  - component: {fileID: 894954990}
+  - component: {fileID: 894954992}
   m_Layer: 0
   m_Name: VoyanteManager
   m_TagString: Untagged
@@ -1378,7 +1347,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &894954990
+--- !u!4 &894954991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894954989}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 662.60284, y: -61.585545, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894954992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1390,7 +1374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348bd86ea0d312d4dbe9692139bada29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VoyanteManager
-  deck:
+  cartesVoyante:
+  - {fileID: 7936712116110121171, guid: 7cae9daf78a953a4da4b7e0be3b9f1c9, type: 3}
   - {fileID: 2206718194098083451, guid: bfeaea9b8dbe4e34383968451bde96ef, type: 3}
   - {fileID: 7755977955735857054, guid: e1a52ea1d7123684f87e31ea326bc6ce, type: 3}
   - {fileID: 8849540428572633428, guid: a132fe8c521d5cc4a9e393eb1d0d8863, type: 3}
@@ -1402,7 +1387,6 @@ MonoBehaviour:
   - {fileID: 4032215397603010103, guid: 183c6c7945926a44d8cd5e4b8be1dd4b, type: 3}
   - {fileID: 2178122490093610344, guid: 03a5cd42c88eeee408c3b6466a51a5af, type: 3}
   - {fileID: 4234042309784860276, guid: 1341402cf7d25bc4c893e7d905538966, type: 3}
-  - {fileID: 2423941676701234685, guid: 14b77f701d9b7a34ea27df979ea5cc94, type: 3}
   slots:
   - {fileID: 1097785862}
   - {fileID: 1765770830}
@@ -1432,22 +1416,6 @@ MonoBehaviour:
   - {fileID: 9543331}
   - {fileID: 922157512}
   - {fileID: 1154089034}
-  cartesParTour: 2
---- !u!4 &894954991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894954989}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 662.6028, y: -61.58555, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &901124851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1429,7 @@ GameObject:
   - component: {fileID: 901124852}
   - component: {fileID: 901124855}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Plateau_camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1614,6 +1582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b07cc40d0d0f84395ed335e036c332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseManager
+  scenePause: Pause
 --- !u!4 &921265850
 Transform:
   m_ObjectHideFlags: 0
@@ -1734,7 +1703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &995076872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &999694894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,7 +1915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1066177961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,7 +2021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1097785859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1101739704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,98 +2324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
---- !u!1 &1156412739
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1156412741}
-  - component: {fileID: 1156412740}
-  m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1156412740
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156412739}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 3116656311286550419, guid: 7e13f21df9e6c534bafbb65b3542fdc3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!4 &1156412741
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156412739}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.9937, y: 0.0001, z: 0}
-  m_LocalScale: {x: 343.0846, y: 202.40723, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1183298880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,7 +2430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1226042784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,39 +2536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
---- !u!1 &1299923081
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1299923082}
-  m_Layer: 0
-  m_Name: Voyante
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1299923082
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299923081}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 662.6028, y: -61.58555, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 319810816}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1330650814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,7 +2642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1338582876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,21 +2687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14178358bd09c42468d3d333148d75ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  cartesPlateau: []
-  tousLesPrefabs:
-  - {fileID: 2206718194098083451, guid: bfeaea9b8dbe4e34383968451bde96ef, type: 3}
-  - {fileID: 7755977955735857054, guid: e1a52ea1d7123684f87e31ea326bc6ce, type: 3}
-  - {fileID: 8849540428572633428, guid: a132fe8c521d5cc4a9e393eb1d0d8863, type: 3}
-  - {fileID: 1352117450082888703, guid: dda2d6ee579565b4cac3a6525c1534d6, type: 3}
-  - {fileID: 8737142439712609418, guid: 26977bdab8e52eb49b3ebd8deb0f8732, type: 3}
-  - {fileID: 5952268601049060424, guid: 67442eb96c6c7454ea8d1dd84e34d272, type: 3}
-  - {fileID: 7873416885999527622, guid: eeb1129b25a5d9a47a1f8b54c2b3f5dc, type: 3}
-  - {fileID: 6192886479454448049, guid: 9baad031f4a7bb94eb94bb0d4d81fe86, type: 3}
-  - {fileID: 4032215397603010103, guid: 183c6c7945926a44d8cd5e4b8be1dd4b, type: 3}
-  - {fileID: 2178122490093610344, guid: 03a5cd42c88eeee408c3b6466a51a5af, type: 3}
-  - {fileID: 4234042309784860276, guid: 1341402cf7d25bc4c893e7d905538966, type: 3}
-  - {fileID: 2423941676701234685, guid: 14b77f701d9b7a34ea27df979ea5cc94, type: 3}
-  cartesJoueurPosees: 0
 --- !u!1 &1442524326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,7 +2792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1502858279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3067,7 +2898,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
+--- !u!1 &1516588586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1516588589}
+  - component: {fileID: 1516588588}
+  - component: {fileID: 1516588587}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1516588587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516588586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1516588588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516588586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1516588589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516588586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1527572267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,7 +3083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1609785391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,7 +3189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1633128949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,7 +3295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1765770827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,7 +3401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1935753827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &1957364402
 GameObject:
   m_ObjectHideFlags: 0
@@ -3703,7 +3613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &2075818095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,7 +3719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1 &2124859418
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,18 +3825,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSlot
   occupied: 0
-  cartePosee: {fileID: 0}
+  carteDansLeSlot: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 901124854}
-  - {fileID: 1156412741}
+  - {fileID: 1338582877}
+  - {fileID: 921265850}
+  - {fileID: 894954991}
   - {fileID: 1101739706}
   - {fileID: 251234602}
   - {fileID: 390490469}
   - {fileID: 528092819}
-  - {fileID: 1299923082}
-  - {fileID: 894954991}
-  - {fileID: 1338582877}
-  - {fileID: 921265850}
+  - {fileID: 1516588589}

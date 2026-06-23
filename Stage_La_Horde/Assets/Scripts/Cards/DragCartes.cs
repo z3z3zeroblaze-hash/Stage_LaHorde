@@ -1,14 +1,12 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragCarte : MonoBehaviour,
-IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragCartes : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    private Vector3 positionDepart;
+    private Transform parentDepart;
 
-    Vector3 positionDepart;
-    Transform parentDepart;
-
-    bool posee = false;
+    private bool posee = false;
 
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -21,11 +19,8 @@ IBeginDragHandler, IDragHandler, IEndDragHandler
         parentDepart = transform.parent;
 
 
-        transform.SetParent(
-            GameObject.Find("Canvas").transform
-        );
+        transform.SetParent(transform.root);
     }
-
 
 
     public void OnDrag(PointerEventData eventData)
@@ -38,69 +33,33 @@ IBeginDragHandler, IDragHandler, IEndDragHandler
     }
 
 
-
     public void OnEndDrag(PointerEventData eventData)
     {
-
         if (posee)
             return;
 
 
-        GameObject objet =
-        eventData.pointerCurrentRaycast.gameObject;
+        GameObject objetSousSouris = eventData.pointerCurrentRaycast.gameObject;
 
 
-
-        if (objet != null)
+        if (objetSousSouris != null)
         {
-
-            CardSlot slot =
-            objet.GetComponent<CardSlot>();
+            CardSlot slot = objetSousSouris.GetComponent<CardSlot>();
 
 
-            if (slot != null && !slot.occupe)
+            if (slot != null && !slot.occupied)
             {
+                slot.PlaceCard(gameObject);
 
-                if (GameManager.instance.PeutPoserCarte())
-                {
+                posee = true;
 
-                    transform.position =
-                    slot.transform.position;
-
-
-                    transform.SetParent(slot.transform);
-
-
-                    slot.occupe = true;
-
-
-                    posee = true;
-
-
-                    GameManager.instance.CarteJoueurPosee();
-
-                    GameManager.instance.SauvegarderCarte(gameObject);
-
-                    Debug.Log("Carte plac�e !");
-
-                    return;
-                }
-
+                return;
             }
-
         }
 
 
-        RetourMain();
-    }
-
-
-
-    void RetourMain()
-    {
+        // si mauvais endroit : retour à la position de départ
         transform.position = positionDepart;
-
         transform.SetParent(parentDepart);
     }
-
 }
