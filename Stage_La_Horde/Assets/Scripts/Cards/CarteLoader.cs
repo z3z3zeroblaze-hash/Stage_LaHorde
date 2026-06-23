@@ -6,7 +6,7 @@ public class CarteLoader : MonoBehaviour
     {
         if (GameManager.instance != null)
         {
-            GameManager.instance.ChargerCartes();
+            //GameManager.instance.ChargerCartes();
         }
         else
         {

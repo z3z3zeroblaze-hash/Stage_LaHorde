@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PauseManager : MonoBehaviour
 {
-    public string scenePause = "Settings";
+    public string scenePause = "Pause";
 
     void Update()
     {
