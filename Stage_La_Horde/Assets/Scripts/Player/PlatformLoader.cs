@@ -4,6 +4,13 @@ public class PlatformLoader : MonoBehaviour
 {
     void Start()
     {
-        GameManager.instance.ChargerCartes();
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.ChargerCartes();
+        }
+        else
+        {
+            Debug.LogWarning("GameManager introuvable.");
+        }
     }
 }
