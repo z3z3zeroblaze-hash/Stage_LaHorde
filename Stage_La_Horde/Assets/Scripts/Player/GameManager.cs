@@ -38,4 +38,18 @@ public class GameManager : MonoBehaviour
         new MancheJoueur(),
         new ManchePlateformer()
     });
+
+    public bool PoséeCarteCLe ()
+    {
+        Debug.Log("Carte clé posée !");
+        if (_carteClePosée)
+        {
+            return false; 
+        }
+
+        _carteClePosée = true;
+        return true;
+    }
+
+    private bool _carteClePosée = false;
 }
